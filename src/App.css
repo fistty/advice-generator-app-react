@@ -1,38 +1,173 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --Light-Cyan: rgb(207, 227, 232);
+  --Neon-Green: rgb(82, 255, 168);
+
+  --Grayish-Blue: rgb(78, 93, 115);
+  --Dark-Grayish-Blue: rgb(50, 58, 73);
+  --Dark-Blue: rgb(31, 38, 50);
+  --Manrope: "Manrope", sans-serif;
+}
+
+body {
+  background-color: var(--Dark-Blue);
+  font-family: "Manrope", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+#root {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  text-align-last: center;
+  color: rgb(204, 216, 228);
+  background-color: rgb(49, 58, 73);
+  border-radius: 10px;
+  width: calc(100% - 32px);
+  min-width: 343px;
+  min-height: 315px;
+  padding-top: 43px;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1 {
+  font-size: 15px;
+  color: var(--Neon-Green);
+  font-weight: 700;
+  font-family: var(--Manrope);
+}
+
+h1 > span {
+  text-decoration: italic;
+}
+
+.joke-div {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 35px;
+  border: 1px solid red;
+  min-height: 124px;
+  font-size: 23px;
+  font-weight: 800;
+  padding-inline: 24px 24px;
+}
+
+.joke-div > p {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+button {
+  background-color: rgb(83, 254, 170);
+  border: none;
+  outline: none;
+  color: rgb(21, 48, 48);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 200px;
+  padding-block: 5px;
+  font-size: 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  position: absolute;
+  bottom: -16px;
+  right: 50%;
+  transform: translateX(50%);
+  cursor: pointer;
+  transition: all 200ms ease-out;
+}
+
+button:hover {
+  background-color: rgb(46, 247, 149);
+}
+
+button:active {
+  transform: translateX(50%) scale(0.9);
+}
+
+.error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(49, 58, 73);
+  color: rgb(204, 216, 228);
+  width: 100%;
+  transform: translateY(-115%);
+}
+
+.move-down {
+  animation: moveDown forwards 0.5s ease-out;
+}
+
+.error > svg {
+  width: 20px;
+  fill: #ff0000;
+  display: block;
+  animation: shake infinite 2.2s linear 200ms;
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(-115%);
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+
+  60% {
+    transform: rotate(0) scale(1);
+  }
+
+  75% {
+    transform: rotate(0) scale(1.2);
+  }
+
+  80% {
+    transform: rotate(0) scale(1.1);
+  }
+
+  84% {
+    transform: rotate(-10deg) scale(1.1);
+  }
+
+  88% {
+    transform: rotate(10deg) scale(1.1);
+  }
+
+  92% {
+    transform: rotate(-10deg) scale(1.1);
+  }
+
+  96% {
+    transform: rotate(10deg) scale(1.1);
+  }
+
+  100% {
+    transform: rotate(0) scale(1);
   }
 }
