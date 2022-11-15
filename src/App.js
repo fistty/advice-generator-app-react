@@ -59,8 +59,8 @@ function App() {
           <div className="joke-div">
             {/* <p>{joke}</p> */}
             <p>
-              “It is easy to sit up and take notice, what's difficult is getting
-              up and taking action.”
+              {joke ||
+                "It is easy to sit up andi take notice, what's difficultt is getting up and taking action."}
             </p>
           </div>
           <div className="divider"></div>
