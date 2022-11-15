@@ -197,9 +197,23 @@ button:active {
     width: 540px;
     min-width: unset;
     max-width: unset;
+    padding-top: 51px;
+    padding-bottom: 71px;
+    border-radius: 15px;
+  }
+
+  .joke-div {
+    font-size: 28px;
+    margin-top: 36px;
+  }
+
+  .joke-div > p {
+    max-width: 460px;
   }
 
   .divider {
     background-image: url("./images/pattern-divider-desktop.svg");
+    width: 444px;
+    margin-top: 40px;
   }
 }
