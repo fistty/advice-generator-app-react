@@ -20,11 +20,14 @@ body {
   font-weight: 600;
   text-align: center;
   font-family: monospace;
-  padding-inline: 2rem;
+  padding-inline: 0rem;
   position: absolute;
-  bottom: 2%;
+  bottom: -43%;
+  left: 50%;
+  transform: translateX(-50%);
   color: var(--Light-Cyan);
   color: var(--Neon-Green);
+  width: 100%;
 }
 
 .attribution a {
@@ -52,6 +55,7 @@ main {
   padding-bottom: 64px;
   position: relative;
   transition: all 200ms ease-out;
+  position: relative;
 }
 
 h1 {
