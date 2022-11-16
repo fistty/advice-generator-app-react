@@ -55,9 +55,7 @@ function App() {
             ADVICE <span>#</span> {adviceId}
           </h1>
           <div className="joke-div">
-            <p>
-              {advice ? "“" + advice + "”" : "It is easy"}
-            </p>
+            <p>{advice ? "“" + advice + "”" : "..."}</p>
           </div>
           <div className="divider"></div>
           <button onClick={handleJoke}>
@@ -70,6 +68,13 @@ function App() {
           </button>
         </div>
       </main>
+
+      <div className="attribution">
+        Coded by
+        <a href="https://www.frontendmentor.io/profile/fistty" target="_blank">
+          Osuntuyi Ayomide Amos
+        </a>
+      </div>
     </>
   );
 }
