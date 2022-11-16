@@ -69,10 +69,12 @@ h1 > span {
   text-align: center;
   margin: 0 auto;
   margin-top: 30px;
-  min-height: 124px;
+  /* min-height: 124px; */
+  height: max-content;
   font-size: 23px;
   font-weight: 800;
   padding-inline: 24px 24px;
+  transition: all 200ms ease-out;
 }
 
 .joke-div > p {
@@ -112,7 +114,6 @@ button > * {
 button:hover > * {
   transform: rotate(180deg);
 }
-
 
 button:active {
   transform: translateX(50%) scale(0.9);
