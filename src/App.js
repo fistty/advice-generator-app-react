@@ -52,7 +52,7 @@ function App() {
       <main>
         <div className="container">
           <h1>
-            ADVICE <span>#</span> {adviceId}
+            ADVICE <span>#</span> {117}
           </h1>
           <div className="joke-div">
             {/* <p>{advice ? "“" + advice + "”" : "..."}</p> */}
