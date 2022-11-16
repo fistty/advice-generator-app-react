@@ -4,11 +4,9 @@ import "./App.css";
 import { useEffect } from "react";
 
 function App() {
-  const [joke, setJoke] = useState("");
-  const [jokeiD, setJokeiD] = useState("");
-  const [nextJoke, setNextJoke] = useState("");
+  const [advice, setAdvice] = useState("");
+  const [adviceId, setAdviceId] = useState("");
   const [error, setError] = useState("");
-  const [width, setWidth] = useState(0);
 
   const handleJoke = () => {
     setError("");
@@ -27,8 +25,8 @@ function App() {
           },
         } = res;
         console.log(advice);
-        setJoke(advice);
-        setJokeiD(id);
+        setAdvice(advice);
+        setAdviceId(id);
       })
       .catch((err) => {
         if (err.code === "ERR_NETWORK") {
@@ -54,13 +52,11 @@ function App() {
       <main>
         <div className="container">
           <h1>
-            ADVICE <span>#</span> {117}
+            ADVICE <span>#</span> {adviceId}
           </h1>
           <div className="joke-div">
-            {/* <p>{joke}</p> */}
             <p>
-              {joke ||
-                "It is easy to sit up andi take notice, what's difficultt is getting up and taking action."}
+              {advice ? "“" + advice + "”" : "It is easy"}
             </p>
           </div>
           <div className="divider"></div>
