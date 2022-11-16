@@ -67,17 +67,16 @@ function App() {
             </svg>
           </button>
         </div>
+        <div className="attribution">
+          Coded by
+          <a
+            href="https://www.frontendmentor.io/profile/fistty"
+            target="_blank"
+            rel="noreferrer">
+            Osuntuyi Ayomide Amos
+          </a>
+        </div>
       </main>
-
-      <div className="attribution">
-        Coded by
-        <a
-          href="https://www.frontendmentor.io/profile/fistty"
-          target="_blank"
-          rel="noreferrer">
-          Osuntuyi Ayomide Amos
-        </a>
-      </div>
     </>
   );
 }
