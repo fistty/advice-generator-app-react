@@ -52,14 +52,10 @@ function App() {
       <main>
         <div className="container">
           <h1>
-            ADVICE <span>#</span> {117}
+            ADVICE <span>#</span> {adviceId}
           </h1>
           <div className="joke-div">
-            {/* <p>{advice ? "“" + advice + "”" : "..."}</p> */}
-            <p>
-              “It is easy to sit up and take notice, what's difficult is getting
-              up and taking action.”
-            </p>
+            <p>{advice ? "“" + advice + "”" : "..."}</p>
           </div>
           <div className="divider"></div>
           <button onClick={handleJoke}>
