@@ -55,7 +55,11 @@ function App() {
             ADVICE <span>#</span> {adviceId}
           </h1>
           <div className="joke-div">
-            <p>{advice ? "“" + advice + "”" : "..."}</p>
+            {/* <p>{advice ? "“" + advice + "”" : "..."}</p> */}
+            <p>
+              “It is easy to sit up and take notice, what's difficult is getting
+              up and taking action.”
+            </p>
           </div>
           <div className="divider"></div>
           <button onClick={handleJoke}>
@@ -71,7 +75,10 @@ function App() {
 
       <div className="attribution">
         Coded by
-        <a href="https://www.frontendmentor.io/profile/fistty" target="_blank">
+        <a
+          href="https://www.frontendmentor.io/profile/fistty"
+          target="_blank"
+          rel="noreferrer">
           Osuntuyi Ayomide Amos
         </a>
       </div>
