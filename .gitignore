@@ -24,3 +24,4 @@ yarn-error.log*
 
 advice-generator-app-main
 README-template.md
+*.psd
